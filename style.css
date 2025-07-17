@@ -1,0 +1,27 @@
+/**
+ * Theme Name:        ESGI Projet
+ * Theme URI:         https://esgi.fr
+ * Description:       Un thème pour projet de fin d'année !!
+ * Version:           1.0.0
+ * Author:            Yohann/Dany/Yacine
+ * Author URI:        https://example.com
+ * Tags:              minimalist, dark mode
+ * Text Domain:       ESGI
+ * Domain Path:       /
+ * Tested up to:      6.4
+ * Requires at least: 6.2
+ * Requires PHP:      7.4
+ * License:           GNU General Public License v2.0 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ */
+ @import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,600;1,300;1,600&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+ /*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
+ /*
+ Document
+ ========
+ */
+ /**
+ Use a better box model (opinionated).
+ */
