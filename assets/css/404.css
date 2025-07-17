@@ -1,0 +1,75 @@
+/* 404.php — styles */
+.error-404-page {
+    background-color: #0a0a2a;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .error-container {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 1rem;
+  }
+  
+  .error-code {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .error-message {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  /* Styles du formulaire de recherche */
+  .error-search .search-form {
+    position: relative;
+    width: 100%;
+  }
+  
+  .error-search input[type="search"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    background: transparent;
+    color: #fff;
+  }
+  
+  .error-search input::placeholder {
+    color: rgba(255,255,255,0.6);
+  }
+  
+  .error-search button {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    transition: opacity .2s;
+  }
+  
+  .error-search button:hover {
+    opacity: 1;
+  }
+  
+  /* ===== Footer foncé (hérité de site-footer) ===== */
+  .site-footer {
+    background-color: #0a0a2a;
+    color: #fff;
+  }
+  

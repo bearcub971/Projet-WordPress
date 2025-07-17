@@ -1,0 +1,64 @@
+/* ===========================
+   OUR PARTNERS — Section principale
+   =========================== */
+   .partners {
+    padding: 4rem 0;
+    background-color: #fff;
+    margin-bottom: 150px;
+  }
+  
+  .partners__title {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 2.5rem;
+    color: #0a0a5a;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  
+  /* grille fluide pour les logos */
+  .partners__logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* chaque logo centré */
+  .partner-item {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* style des images */
+  .partner-item img {
+    max-height: 60px;
+    opacity: 0.3;
+    filter: grayscale(100%);
+    transition: opacity 0.3s ease, filter 0.3s ease;
+  }
+  
+  .partner-item img:hover {
+    opacity: 1;
+    filter: none;
+  }
+  
+  /* ==============
+     RESPONSIVE (<768px)
+     ============== */
+  @media (max-width: 768px) {
+    .partners__logos {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .partners__title {
+      text-align: center;
+    }
+  }
+  

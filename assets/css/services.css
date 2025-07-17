@@ -1,0 +1,95 @@
+/* ===========================
+   OUR SERVICES — Section principale
+   =========================== */
+   
+  .services__title {
+    font-family: Mulish;
+    font-size: 70px;
+    color: #0a0a5a;
+    margin-bottom: 2rem;
+    text-align: left;
+    padding: 0 9rem ;
+  }
+  .services__grid {
+    display: grid;
+    /* 4 colonnes fixes : image / image / texte / image */
+    grid-template-columns: 1fr 1fr auto 1fr;
+    align-items: center;
+  }
+  
+  /* Images dans les colonnes 1,2,4 */
+  .service-item img {
+    display: block;
+    width: 100%;
+    height: 380px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Colonne texte centré */
+  .service-item--text {
+    text-align: center;
+  }
+  .services-link {
+    position: relative;
+    display: inline-block;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.25rem;
+    color: #0a0a5a;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .services-link::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: -0.25em;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #f6c747, #e44585);
+  }
+  
+  /* ==============
+     DESCRIPTION SOUS LA GRID
+     ============== */
+  .services-description {
+    padding: 5rem 0;
+    background-color: #fff;
+  }
+  .services-description__title {
+    font-family: Mulish;
+    font-size: 63px;
+    color: #0a0a5a;
+    margin-bottom: 1rem;
+  }
+  .services-description__text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    max-width: 750px;
+  }
+  
+  /* ==============
+     IMAGE PLEINE LARGEUR
+     ============== */
+  .services-hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* ==============
+     RESPONSIVE (<768px)
+     ============== */
+  @media (max-width: 768px) {
+    .services__grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .services__title, 
+    .services-description__title {
+      text-align: center;
+    }
+    .service-item--text .services-link {
+      font-size: 1.5rem;
+    }
+  }
+  

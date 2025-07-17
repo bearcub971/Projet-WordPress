@@ -1,0 +1,146 @@
+/* ========== Conteneur général ========== */
+.sidebar {
+    width: 28%;               /* ajuste en fonction de ta grille */
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  /* ========== Titre de la sidebar (widget title) ========== */
+  .sidebar .widget-title,
+  .sidebar h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.75rem;
+    color: #0a0a5a;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  /* petit trait accent sous le titre */
+  .sidebar .widget-title::after,
+  .sidebar h2::after {
+    content: "";
+    position: absolute;
+    bottom: -0.35rem;
+    left: 0;
+    width: 4rem;
+    height: 3px;
+    background: linear-gradient(to right, #f6c747, #e44585);
+  }
+  
+  /* ========== Formulaire de recherche ========== */
+  .sidebar .search-form {
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar .search-form input[type="search"] {
+    width: calc(100% - 3.5rem);
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+  
+  .sidebar .search-form button {
+    padding: 0.5rem;
+    background: #e44585;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .sidebar .search-form button:hover {
+    background: #f6c747;
+  }
+  
+  /* ========== Liste des posts récents ========== */
+  .sidebar .widget_recent_entries ul,
+  .sidebar .widget_pages ul,
+  .sidebar .widget_archive ul,
+  .sidebar .widget_categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+  }
+  
+  .sidebar .widget_recent_entries li,
+  .sidebar .widget_pages li,
+  .sidebar .widget_archive li,
+  .sidebar .widget_categories li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .sidebar .widget_recent_entries img {
+    width: 64px;
+    height: 48px;
+    object-fit: cover;
+    margin-right: 0.75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .sidebar .widget_recent_entries a {
+    font-size: 1rem;
+    color: #0a0a5a;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .sidebar .widget_recent_entries a:hover {
+    color: #e44585;
+  }
+  
+  /* ========== Archives & Catégories ========== */
+  .sidebar .widget_archive li a,
+  .sidebar .widget_categories li a {
+    position: relative;
+    padding-left: 0.5rem;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .sidebar .widget_archive li::before,
+  .sidebar .widget_categories li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #e44585;
+  }
+  
+  .sidebar .widget_archive li a:hover,
+  .sidebar .widget_categories li a:hover {
+    color: #0a0a5a;
+  }
+  
+  /* ========== Nuage de tags ========== */
+  .sidebar .tagcloud a {
+    display: inline-block;
+    margin: 0.25rem;
+    padding: 0.3rem 0.6rem;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    font-size: 0.85rem;
+    color: #555;
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  
+  .sidebar .tagcloud a:hover {
+    background: #e44585;
+    border-color: #e44585;
+    color: #fff;
+  }
+  
+  /* ========== Responsivité ========== */
+  @media (max-width: 1024px) {
+    .sidebar {
+      width: 100%;
+      padding: 1.5rem 0;
+      order: -1; /* si tu veux placer la sidebar au-dessus sur mobile */
+    }
+  }
+  
