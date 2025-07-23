@@ -126,15 +126,66 @@
   }
   
   /* 5. RESPONSIVE */
-  @media (max-width: 768px) {
+  @media (max-width: 750px) {
     .about-hero .hero-inner,
     .about-inner .about-flex,
     .our-values .about-flex {
       flex-direction: column;
+      align-items: center;
       text-align: center;
+      gap: 1rem; /* Réduction de l'espacement général */
     }
+  
+    .text-right,
+    .text-right2 {
+      margin: 0 auto;
+      padding: 0.5rem 1rem;
+    }
+  
+    .about-hero h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem; /* Réduction du margin */
+    }
+  
+    .about-inner .text-right h2,
+    .our-values h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  
+    .about-inner .text-right p,
+    .our-values p {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+  
     .our-team {
-      padding: 2rem 0;
+      padding: 1.5rem 1rem;
+    }
+  
+    .about-hero .hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 85%;
+      margin-bottom: 1rem; /* Moins d’espace sous l’image */
+    }
+  
+    .about-hero .hero-image img {
+      height: 180px;
+      object-fit: cover;
+      margin-top: 10px;
+      max-width: 100%;
+      width: auto;
+    }
+  
+    /* Réduction de l'espace entre image et texte */
+    .about-inner .about-flex > *:not(:last-child),
+    .our-values .about-flex > *:not(:last-child) {
+      margin-bottom: 1rem;
     }
   }
+  
+  
   

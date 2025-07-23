@@ -122,21 +122,53 @@
   /* ===========================
      Responsive Mobile / Tablette
      =========================== */
-  @media (max-width: 768px) {
-    .contacts-info {
-      flex-direction: column;
-      text-align: center;
-      gap: 2rem;
-      margin-bottom: 2rem;
+     @media (max-width: 768px) {
+      .contacts-intro,
+      .contacts-form {
+        padding: 2rem 1rem;
+      }
+    
+      .contacts-title {
+        font-size: 1.75rem;
+        text-align: center;
+      }
+    
+      .contacts-subtitle,
+      .form-intro {
+        font-size: 0.95rem;
+        text-align: center;
+      }
+    
+      .contacts-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+    
+      .contacts-image img {
+        width: 95%;
+        margin: 0 auto;
+      }
+    
+      .form-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+    
+      .form-message {
+        grid-column: 1 / -1;
+      }
+    
+      .form-submit-wrapper {
+        text-align: center;
+      }
+    
+      .btn-submit {
+        width: 100%;
+        max-width: 300px;
+      }
     }
-    .contacts-form .form-grid {
-      grid-template-columns: 1fr;
-    }
-    .form-message {
-      grid-column: auto;
-    }
-    .form-submit-wrapper {
-      text-align: center;
-    }
-  }
+    
   

@@ -79,17 +79,43 @@
   /* ==============
      RESPONSIVE (<768px)
      ============== */
-  @media (max-width: 768px) {
-    .services__grid {
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
+     @media (max-width: 768px) {
+      .services__title {
+        font-size: 40px;
+        text-align: center;
+        padding: 0 2rem;
+      }
+    
+      .services__grid {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        text-align: center;
+        padding: 0 1rem;
+      }
+    
+      .service-item img {
+        height: auto;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+    
+      .service-item--text {
+        padding: 0 1rem;
+      }
+    
+      .services-description {
+        padding: 3rem 1.5rem;
+        text-align: center;
+      }
+    
+      .services-description__title {
+        font-size: 36px;
+      }
+    
+      .services-description__text {
+        font-size: 1rem;
+        max-width: 100%;
+      }
     }
-    .services__title, 
-    .services-description__title {
-      text-align: center;
-    }
-    .service-item--text .services-link {
-      font-size: 1.5rem;
-    }
-  }
+    
   
